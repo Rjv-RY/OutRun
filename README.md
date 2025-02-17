@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="images/OutRun cover.jpg" />
+</p>
+
+
 # OutRun
 An homage to the original Sega classic called OutRun, released in 1986.
 
