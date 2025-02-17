@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/OutRun cover.jpg" />
+  <img src="images/OutRun cover.png" />
 </p>
 
 
