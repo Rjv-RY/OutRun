@@ -1,4 +1,4 @@
-### OutRun
+# OutRun
 An homage to the original Sega classic called OutRun, released in 1986.
 
 Built using JS, CSS and HTML, runs flawlessly on the browser, blazingly fast.
@@ -9,7 +9,7 @@ Also massive thanks to the YT tutorials from whom I ~~essentially stole~~ took m
 
 (I forgot which tutorial for making an Outrun it was, if I find, will add)
 
-## (needless trivia if someone likes to read)
+### (needless trivia if someone likes to read)
 
 Has my favourite track from the game, Passing Breeze.
 
