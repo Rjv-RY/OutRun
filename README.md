@@ -1,4 +1,4 @@
-## OutRun
+### OutRun
 An homage to the original Sega classic called OutRun, released in 1986.
 
 Built using JS, CSS and HTML, runs flawlessly on the browser, blazingly fast.
