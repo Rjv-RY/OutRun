@@ -435,7 +435,7 @@
 
           // volume
           this.destination = this.audioCtx.createGain();
-          this.volume = 0.5;
+          this.volume = 0.3;
           this.destination.connect(this.audioCtx.destination);
 
           this.files = {};
@@ -449,7 +449,7 @@
               source.buffer = _self.files[key];
 
               let gainNode = _self.audioCtx.createGain();
-              gainNode.gain.value = 0.6;
+              gainNode.gain.value = 0.5;
               source.connect(gainNode);
               gainNode.connect(_self.destination);
 
@@ -618,7 +618,7 @@
           e.preventDefault();
 
           if (inGame) return;
-
+          let introPlayed = false;
           sleep(0)
             .then((_) => {
               text.classList.remove("blink");
@@ -626,6 +626,7 @@
               text.innerText = 3;
               audio.play("beep");
               return sleep(1000);
+              introPlayed = true;
             })
             .then((_) => {
               text.innerText = 2;
