@@ -927,21 +927,6 @@
       }
 
       function init() {
-//checker function to later delete
-const lapElement = document.getElementById('lap');
-const computedStyle = window.getComputedStyle(lapElement, '::before');
-console.log('Initial lap content:', lapElement.textContent);
-console.log('Before pseudo-element content:', computedStyle.content);
-
-// Add a mutation observer to track changes
-const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-        console.log('Lap content changed to:', mutation.target.textContent);
-    });
-});
-observer.observe(lapElement, { characterData: true, childList: true, subtree: true });
-
-        //the actual init
         game.style.width = width + "px";
         game.style.height = height + "px";
 
