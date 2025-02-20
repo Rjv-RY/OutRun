@@ -235,7 +235,7 @@
       <div id="hud">
         <span id="time" class="topUI">0</span>
         <span id="score" class="topUI">0</span>
-        <span id="lap" class="topUI">00'00"000</span>
+        <span id="lap" class="topUI">0'00"000</span>
         <span id="speedo">0</span>
       </div>
 
@@ -743,7 +743,7 @@
           let cT = new Date(timestamp() - start);
           lap.innerText = `${cT.getMinutes()}'${cT.getSeconds().pad(2)}"${cT
             .getMilliseconds()
-            .pad(3)}`;
+            .pad(0)}`;
         }
 
         // sound
