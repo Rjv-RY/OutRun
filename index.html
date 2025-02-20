@@ -740,10 +740,12 @@
           score.innerText = (scoreVal | 0).pad(8);
           speedo.innerText = speed | 0;
 
-          let cT = new Date(timestamp() - start);
-          lap.innerText = `${cT.getMinutes()}'${cT.getSeconds().pad(2)}"${cT
-            .getMilliseconds()
-            .pad(0)}`;
+          let elapsed = timestamp() - start;
+        let minutes = Math.floor(elapsed / 60000);
+        let seconds = Math.floor((elapsed % 60000) / 1000);
+        let milliseconds = elapsed % 1000;
+        
+        lap.innerText = `${minutes}'${seconds.pad(2)}"${milliseconds.pad(3)}`;
         }
 
         // sound
