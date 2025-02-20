@@ -67,6 +67,7 @@
       #lap {
         left: 88%;
         width: 45%;
+        content: "0'00\"000";
       }
 
       #lap::before {
@@ -912,7 +913,7 @@
         speedo.style.display = "block";
 
         // Initialize lap display to 0
-        lap.innerText = "0'00\"000";
+        lap.textContent = "0'00\"000";
       }
 
       function updateHighscore() {
@@ -961,6 +962,7 @@
 
           lines.push(line);
         }
+        lap.textContent = "0'00\"000";
 
         for (let i = 0; i < 12; i++) {
           var element = document.createElement("p");
