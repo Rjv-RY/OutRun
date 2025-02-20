@@ -622,11 +622,14 @@
           sleep(0)
             .then((_) => {
               text.classList.remove("blink");
-              audio.play("intro");
+              if (!introPlayed) {
+                audio.play("intro");
+                introPlayed = true;
+              }
               text.innerText = 3;
               audio.play("beep");
               return sleep(1000);
-              introPlayed = true;
+              
             })
             .then((_) => {
               text.innerText = 2;
