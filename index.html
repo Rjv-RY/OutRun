@@ -67,7 +67,6 @@
       #lap {
         left: 88%;
         width: 45%;
-        content: "0'00\"000";
       }
 
       #lap::before {
@@ -643,6 +642,7 @@
             })
             .then((_) => {
               reset();
+              start = timestamp();
 
               home.style.display = "none";
               road.style.opacity = 1;
@@ -890,7 +890,7 @@
       function reset() {
         inGame = false;
 
-        start = timestamp();
+        // start = timestamp();
         countDown = map[map.length - 2].to / 130 + 10;
 
         playerX = 0;
@@ -911,9 +911,8 @@
         hud.style.display = "none";
         home.style.display = "block";
         speedo.style.display = "block";
-
-        // Initialize lap display to 0
-        lap.textContent = "0'00\"000";
+        
+        lap.innerText = "0'00\"000";
       }
 
       function updateHighscore() {
