@@ -605,7 +605,7 @@
       let map = genMap();
 
       // additional controls
-
+      let introPlayed = false;
       addEventListener(`keyup`, function (e) {
         if (e.code === "KeyM") {
           e.preventDefault();
@@ -618,7 +618,7 @@
           e.preventDefault();
 
           if (inGame) return;
-          let introPlayed = false;
+          
           sleep(0)
             .then((_) => {
               text.classList.remove("blink");
@@ -629,7 +629,6 @@
               text.innerText = 3;
               audio.play("beep");
               return sleep(1000);
-              
             })
             .then((_) => {
               text.innerText = 2;
